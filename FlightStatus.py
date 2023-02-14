@@ -38,11 +38,8 @@ def getAllFlightsStatus(fileName):
                 mydict[key] = date_time_obj
                 
     return list(mydict.values())
-            
-    
-print(getAllFlightsStatus("Dummy_Flight_Leg_Data.csv"))
 
-# dict_val = getAllFlightsStatus("Test.csv")
+dict_val = getAllFlightsStatus("Dummy_Flight_Leg_Data.csv")
 
 for a in dict_val:
     print(a)
